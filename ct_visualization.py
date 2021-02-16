@@ -9,7 +9,7 @@ from skimage import io
 from scipy.ndimage import zoom
 from skimage.transform import  pyramid_gaussian
 
-pt_path = 'Data/TD316'
+pt_path = '../Data/TD316'
 
 def create_ct_volume( pt_path, prefix = 'CT'):
     dcms = glob.glob(os.path.join(pt_path, prefix+'*'))
